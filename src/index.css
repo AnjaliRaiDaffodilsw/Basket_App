@@ -1,13 +1,150 @@
 body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+    font-family: 'Helvetica';
+  }
+  h1,
+  h2,
+  h3 {
+    margin: 0.5rem 0;
+  }
+  h1 {
+    font-size: 1.5rem;
+  }
+  h2 {
+    font-size: 1.2rem;
+  }
+  h3 {
+    font-size: 1rem;
+  }
+  .App{
+    text-align: center;
+  }
+  .App-header {
+    background-color: #222;
+    height: 186px;
+    padding: 20px;
+    color: #fff;
+  }
+   i.fa.fa-shopping-basket.fa-6 {
+    font-size: 8em;
+  }
+  .fa {
+    display: inline-block;
+    font: normal normal normal 14px/1 FontAwesome;
+    font-size: inherit;
+    text-rendering: auto;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+  }
+  
+  i {
+    font-style: italic;
+  }
+  .row {
+    /* display: flex; */
+    width: 30vw;
+    justify-content: space-between;
+  }
+  .block2 {
+     background-color: #e0e0e0;
+    padding: 1rem;
+    margin: 0.5rem;
+    margin-top: 80px;
+    border-radius: 0.5rem;
+    float: left;
+    /* margin-right: 1300px; */
+  }
+  .row.center {
+    align-items: center;
+  }
+  .col-1 {
+    flex: 1;
+   
+  }
+  .col-2 {
+    flex: 2;
+  }
+  .block {
+    background-color: #e0e0e0;
+    padding: 1rem;
+    margin: 0.5rem;
+    margin-top: 80px;
+    border-radius: 0.5rem;
+    float: left;
+  }
+  
+  .text-right {
+    text-align: right;
+  }
+  img.small {
+    max-height: 8rem;
+  }
+  button {
+    font-size: 0.8rem;
+    padding: 0.2rem;
+    margin: 0.1rem;
+    border-radius: 0.5rem;
+    border: 0.1rem #404040 solid;
+    background-color: #f0c040;
+    width: 100%;
+    cursor: pointer;
+  }
+  button.add {
+    background-color: #40c0f0;
+    width: 1.5rem;
+  }
+  button.remove {
+    background-color: #f04040;
+    width: 1.5rem;
+  }
+  button.badge {
+    background-color: #f04040;
+    border: none;
+    color: #ffffff;
+    width: 1.5rem;
+  }
+  .rightDiv {
+    /* float: right; */
+    margin-right: -1300px;
+    background-color: lightgreen;
+    height: 40px;
+    width: 40px;
+  }
+  
+  
+ 
+  nav, nav form:first-child {
+    width: 50%;
+}
+nav {
+    border: 1px solid red;
+    -ms-flex-item-align: center;
+    align-self: center;
+    margin: 30px;
+    background-color: pink;
+    padding: 20px;
+    border-radius: 5px;
+}
+user agent stylesheet
+nav {
+    display: block;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+footer, footer a {
+  color: #fff;
+}
+footer {
+  height: 150px;
+  background-color: #222;
+  margin: 20px 0 0;
+ 
+  display: flex;
+
+  justify-content: center;
+ 
+  margin-top: 900px;
+  align-items: center;
+}
+user agent stylesheet
+footer {
+  /* display: block; */
 }

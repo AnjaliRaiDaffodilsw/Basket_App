@@ -1,0 +1,57 @@
+import React , { useState } from "react";
+import './App.css';
+
+function App() {
+  const [inputList,setInputList] = useState([
+    'Strawberry',
+    'Apple'
+  ]);
+
+  const itemEvent = () => {
+    setInputList({
+      newinputList : inputList
+    });
+  };
+  return (
+    <div className="main_div">
+      <div className = "center_div">
+        <br />
+        <img src = "https://www.flaticon.com/svg/vstatic/svg/3190/3190442.svg?token=exp=1619152199~hmac=0cd6b6270f786f2a81d3d57aa4448918" />
+        <h1> Hello , Basket!!</h1>
+        <br />
+        <input type = "text" placeholder = "Add a items" 
+        
+        />
+       
+        <br/>
+       <img className = "leaf"
+       src ="https://www.flaticon.com/premium-icon/icons/svg/259/259345.svg" /><h3 className ="header1">Groceries</h3>
+       
+       <h3 className ="header2">Basket</h3>
+       <img className = "basket"
+       src ="https://www.flaticon.com/svg/vstatic/svg/2636/2636640.svg?token=exp=1619154222~hmac=989d0c0045f6eebce31168014665bfb9" />
+       <br />
+       <br/>
+       <br/>
+       <div className ="basketLeft">
+        <ol>
+        <li
+        onChange = {itemEvent}>
+        </li>
+        </ol>
+       </div>
+       <ol>
+       <button
+       onClick = {itemEvent}
+       >+</button> <li>{inputList}</li>
+       </ol>
+        
+       
+       
+      </div>
+      
+    </div>
+  );
+}
+
+export default App;
